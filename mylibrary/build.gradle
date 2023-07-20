@@ -34,9 +34,9 @@ android {
         viewBinding true
     }
 
-    testFixtures {
-        enable = true
-    }
+//    testFixtures {
+//        enable = true
+//    }
     publishing {
         singleVariant("release") {
             // if you don't want sources/javadoc, remove these lines
