@@ -1,16 +1,14 @@
-//buildscript {
-//    repositories {
-//        mavenCentral()
-//    }
-//    dependencies {
-//        classpath 'com.android.tools.build:gradle:8.0.2'
-//    }
-//}
+
 plugins {
     id 'maven-publish' //For publish
     id 'com.android.library'
     id 'org.jetbrains.kotlin.android'
 }
+
+group = 'com.jogendra.login'
+version = '1.0.0'
+
+
 apply from : '../dependencies.gradle' //Dependencies versions defined here
 
 android {
@@ -73,9 +71,10 @@ afterEvaluate {
         publications {
             release(MavenPublication) {
                 from components.release
-                groupId 'com.jogendra.login'
-                artifactId 'mylibrary'
-                version '1.0.0'
+
+                groupId = 'com.jogendra.login'
+                artifactId ='mylibrary'
+                version = '1.0.0'
             }
         }
 //        repositories {
