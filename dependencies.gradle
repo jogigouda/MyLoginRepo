@@ -1,0 +1,41 @@
+ext{
+
+    //SDK dependency
+    sdk_verions = [
+            "compileSdk" : 33,
+            "minSdk" : 24,
+            "targetSdk": 33
+    ]
+
+    ktx = [
+            core_ktx : "1.8.0'"
+    ]
+
+    kotlin = [
+            core_ktx_lib : "androidx.core:core-ktx:${ktx.core_ktx}"
+    ]
+
+
+    material = [
+            version : "1.5.0"
+    ]
+    compact = [
+            appcompat : "1.6.1"
+    ]
+    navigation = [
+            ktx : "2.6.0"
+    ]
+    constraintlayout = [
+            version : "2.1.4"
+    ]
+    androidx = [
+            appcompat : "androidx.appcompat:appcompat:${compact.appcompat}",
+            constraintlayout : "androidx.constraintlayout:constraintlayout:${constraintlayout.version}",
+            navigation_fragment : "androidx.navigation:navigation-fragment-ktx:${navigation.ktx}",
+            navigation_ui : "androidx.navigation:navigation-ui-ktx:${navigation.ktx}"
+    ]
+    google_material = [
+            material : "com.google.android.material:material:${material.version}"
+    ]
+}
+
