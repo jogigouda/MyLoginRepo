@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:ignore="MissingDefaultResource">
+
+    <LinearLayout
+        android:id="@+id/nav_host_fragment_content_main"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:padding="16dp"
+        android:background="@color/cardview_light_background"
+        android:layout_height="match_parent" >
+        <androidx.appcompat.widget.AppCompatEditText
+            android:layout_width="match_parent"
+            android:hint="Email"
+            android:gravity="center_vertical"
+            android:layout_height="70dp"/>
+
+        <androidx.appcompat.widget.AppCompatEditText
+            android:layout_width="match_parent"
+            android:hint="PassWord"
+            android:gravity="center_vertical"
+            android:layout_height="70dp"/>
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:layout_width="match_parent"
+            android:text="Click me"
+            android:gravity="center"
+            android:layout_height="70dp"/>
+    </LinearLayout>
+</FrameLayout>
