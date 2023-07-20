@@ -1,7 +1,15 @@
+buildscript {
+    repositories {
+        mavenCentral()
+    }
+    dependencies {
+        classpath 'com.android.tools.build:gradle:8.0.2'
+    }
+}
 plugins {
+    id 'maven-publish' //For publish
     id 'com.android.library'
     id 'org.jetbrains.kotlin.android'
-    id 'maven-publish' //For publish
 }
 apply from : '../dependencies.gradle' //Dependencies versions defined here
 
@@ -58,6 +66,7 @@ dependencies {
     androidTestImplementation 'androidx.test.ext:junit:1.1.5'
     androidTestImplementation 'androidx.test.espresso:espresso-core:3.5.1'
 }
+
 
 afterEvaluate {
     publishing {
