@@ -43,18 +43,18 @@ android {
 //    testFixtures {
 //        enable = true
 //    }
-//    publishing {
-//        singleVariant("release") {
-//            // if you don't want sources/javadoc, remove these lines
-//            withSourcesJar()
-//            withJavadocJar()
-//        }
-//    }
+    publishing {
+        singleVariant("release") {
+            // if you don't want sources/javadoc, remove these lines
+            withSourcesJar()
+            withJavadocJar()
+        }
+    }
 }
 
 dependencies {
 
-    implementation kotlin.core_ktx_lib
+//    implementation kotlin.core_ktx_lib
     implementation androidx.appcompat
     implementation google_material.material
     implementation androidx.constraintlayout
